@@ -81,16 +81,17 @@ padding: 20px;
     }
   </style>
   <script>
+
     function verifierMotDePasse() {
-      var mdp = document.getElementById("password").value;
-      var motDePasseCorrect = "Aube"; 
-      if (mdp === motDePasseCorrect) {
+    var mdp = document.getElementById("password").value.toLowerCase();
+    var motDePasseCorrect = "aube";
+    if (mdp === motDePasseCorrect) {
         document.getElementById("contenu").style.display = "block";
         document.getElementById("formulaire").style.display = "none";
-      } else {
+    } else {
         alert("Mot de passe incorrect");
-      }
     }
+}
   </script>
 </head>
 <body>
